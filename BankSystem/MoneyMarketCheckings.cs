@@ -13,7 +13,7 @@ namespace BankSystem
         }
         public void Calculateinterest()
         {
-            decimal interest = Math.Round(Balance * interestrate / 12, 2);
+            decimal interest = Math.Round(balance * interestrate / 12, 2);
             if (interest >= (decimal).01)
             {
                 MakeDeposit(interest, DateTime.Now, "Interest Accrual");
