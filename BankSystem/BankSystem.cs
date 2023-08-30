@@ -18,7 +18,7 @@ namespace BankSystem
                 return bankSystem;
             }
         }
-        private BankSystm()
+        public BankSystm()
         {
             bankAccounts = new List<BankAccount> {
             new Checking("Jeff Test", 500),
