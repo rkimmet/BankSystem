@@ -53,6 +53,7 @@ namespace apitests
             Assert.AreEqual(201, createdResult.StatusCode);
             Assert.AreEqual("testowner", responseValue.owner);
         }
+
         [TestMethod]
         public void MakeWithdraw_validamount()
         {
@@ -62,6 +63,7 @@ namespace apitests
             Assert.AreEqual(200, createdresult.StatusCode);
 
         }
+
         [TestMethod]
         public void MakeWithdraw_invalidamount()
         {
@@ -71,6 +73,7 @@ namespace apitests
             Assert.IsInstanceOfType(response, typeof(Microsoft.AspNetCore.Mvc.BadRequestResult));
 
         }
+
         [TestMethod]
         public void MakeDeposit_invalidamount()
         {
@@ -79,6 +82,7 @@ namespace apitests
             Assert.IsInstanceOfType(response, typeof(Microsoft.AspNetCore.Mvc.BadRequestResult));
 
         }
+
         [TestMethod]
         public void TransactionQuery()
         {
